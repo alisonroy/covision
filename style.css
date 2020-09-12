@@ -1,8 +1,115 @@
-body {
+.dark-mode {
   background-color: #00040c;
   font-family: "Moon Light";
   color: #868c92;
 }
+.home-social {
+  list-style: none;
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 6rem;
+  right: 6.2rem;
+  z-index: 500;
+}
+
+.home-social a {
+  color: #fff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-social li {
+  position: relative;
+  padding: 0.6rem 0;
+}
+
+.home-social li a {
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.home-social i,
+.home-social span {
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-social i {
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  right: 0;
+}
+
+.home-social span {
+  background-color: #151515;
+  font-size: 0.8rem;
+  line-height: 30px;
+  color: #f26522;
+  right: 50px;
+  padding: 0 15px;
+  margin: 3px 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+.home-social span::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid #151515;
+  position: absolute;
+  top: 50%;
+  right: -6px;
+  margin-top: -6px;
+}
+
+.home-social li:hover span {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.fa {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.fa-facebook-f:before {
+  content: "\f39e";
+}
+.light-mode {
+  background-color: #ffffff;
+  font-family: "Moon Light";
+  color: #00040c;
+}
+
 .groot {
   min-height: 100vh;
   background-image: url("hp.jpg");
@@ -128,4 +235,27 @@ body {
   #footer-links-container ul {
     padding-left: 30px !important;
   }
+}
+
+.card {
+  background-color: #181818;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  width: 400px;
+  height: 150px;
+}
+.phone-card {
+  color: #868c92;
+}
+.phone-card:hover {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 0 10px 10px rgba(255, 0, 0, 0.12),
+    0 10px 10px rgba(255, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
