@@ -1,17 +1,13 @@
+$(window).on("load", function () {
+  $("#status").delay(700).fadeOut("slow");
+  $("#preloader").delay(800).fadeOut("slow");
+});
 $.ajax({
   type: "POST",
   url: "https://api.rootnet.in/covid19-in/notifications",
   datatype: "html",
   data: {},
   success: function (response) {
-    // ans = [];
-    // response["data"]["notifications"][1].title.replace(
-    //   /(\d{2}\/\d{2}\/\d{4}) |(.+$)/g,
-    //   (_, date, text) => {
-    //     ans.push(date || text);
-    //   }
-    // );
-
     var card = document.getElementById("card");
     for (var i in response["data"]["notifications"]) {
       var div = document.createElement("div");
@@ -23,6 +19,7 @@ $.ajax({
       var anchor = document.createElement("a");
       anchor.href = response["data"]["notifications"][i].link;
       anchor.classList.add("link-card");
+      anchor.target = "_blank";
       var linkTextNode = document.createTextNode(
         response["data"]["notifications"][i].link
       );

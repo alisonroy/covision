@@ -11,10 +11,13 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <title>COVISION</title>
+  <title>ADVISORIES</title>
 </head>
 
 <body class="dark-mode">
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
   <navbar class="navbar navbar-expand-lg navbar-custom fixed-top">
     <a class="logo" href="index.html"><img src="logo.png" alt="logo" /></a>
     <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
@@ -31,13 +34,21 @@
           <a class="nav-link nav-text" href="advisories.html">Advisories</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-text" href="contact.html">Contact Us</a>
+          <a class="nav-link nav-text" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-text" href="hospitaldetails.html">Hospital</a>
         </li>
       </ul>
     </div>
   </navbar>
   <div class="container">
     <div>
+      <div class="mrt text-center">
+        <span class="groot-tagline text font-weight-bold grah">
+          NOTIFICATIONS AND ADVISORIES
+        </span>
+      </div>
       <div class="mt-5 row" id="card">
       </div>
       <div class="card card-update" id="updated">
@@ -67,7 +78,7 @@
 
 
 
-  <footer class="py-4 dark-mode text-white">
+  <footer class="py-4 foot-dark text-white">
     <div class="pt-5 text-center">
       &copy; 2020 COVISION | All rights reserved
     </div>

@@ -136,6 +136,7 @@
 .grah {
   color: #868c92;
   font-family: "Moon Light";
+  font-size: 2rem;
 }
 .im {
   border-radius: 50%;
@@ -236,21 +237,20 @@
     10px 10px 10px rgba(0, 255, 255, 0.12);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-.phone-card,
-.link-card {
-  color: #868c92;
+
+.link-card,
+.phone-card {
+  color: #008888;
 }
-.link-card:hover {
+.link-card:hover,
+.phone-card:hover {
   color: #00ffff;
   text-decoration: none;
 }
-.phone-card:hover {
-  color: #ff0000;
-  text-decoration: none;
-}
+
 .card-custom:hover {
-  box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.12),
-    10px 10px 10px rgba(255, 0, 0, 0.12);
+  box-shadow: 10px 10px 10px rgba(0, 255, 255, 0.12),
+    10px 10px 10px rgba(0, 255, 255, 0.12);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .light-mode {
@@ -272,12 +272,15 @@
   font-size: 7px;
   color: #ffffff;
 }
+.mrt {
+  margin-top: 5rem;
+}
 @media (min-width: 768px) {
   .text {
     font-size: 1.5rem;
   }
   .groot-tagline {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .ch {
     font-size: 2rem;
@@ -296,198 +299,42 @@
     font-size: 10px;
   }
 }
-
-/* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-} 
-
-h1 {
-  font-size: 2.5rem;
-  font-family: "Montserrat";
-  font-weight: normal;
-  color: #444;
-  text-align: center;
-  margin: 2rem 0;
+.foot-dark {
+  background-color: #191d24;
 }
-
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 80rem;
+#hostable {
+  color: #868c92;
+  background-color: #181818;
 }
-
-.cols {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.hos-header {
+  font-family: "Moon Bold";
 }
-
-.col {
-  width: calc(25% - 2rem);
-  margin: 1rem;
-  cursor: pointer;
-}
-
-.card-container {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-}
-
-.front,
-.back {
-  background-size: cover;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  background-position: center;
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
-    -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  text-align: center;
-  min-height: 280px;
-  height: auto;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 1.5rem;
-}
-
-.back {
-  background: #cedce7;
-  background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-  background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-  background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-}
-
-.front:after {
-  position: absolute;
+#preloader {
+  position: fixed;
   top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  content: "";
-  display: block;
-  opacity: 0.6;
-  background-color: #000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 10px;
-}
-.card-container:hover .front,
-.card-container:hover .back {
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
-    -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-}
-
-.back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.inner {
-  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-  transform: translateY(-50%) translateZ(60px) scale(0.94);
-  top: 50%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 2rem;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  outline: 1px solid transparent;
-  -webkit-perspective: inherit;
-  perspective: inherit;
-  z-index: 2;
-}
-
-.card-container .back {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.card-container .front {
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.card-container:hover .back {
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.card-container:hover .front {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.front .inner p {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.front .inner p:after {
-  content: "";
-  width: 4rem;
-  height: 2px;
-  position: absolute;
-  background: #c6d4df;
-  display: block;
   left: 0;
   right: 0;
-  margin: 0 auto;
-  bottom: -0.75rem;
+  bottom: 0;
+  background-color: #00040c;
+
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
 }
 
-.front .inner span {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: "Montserrat";
-  font-weight: 300;
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url("eye.png");
+  /* path to your loading animation */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
 }
-
-@media screen and (max-width: 64rem) {
-  .col {
-    width: calc(33.333333% - 2rem);
-  }
-}
-
-@media screen and (max-width: 48rem) {
-  .col {
-    width: calc(50% - 2rem);
-  }
-}
-
-@media screen and (max-width: 32rem) {
-  .col {
-    width: 100%;
-    margin: 0 0 2rem 0;
-  }
-} */

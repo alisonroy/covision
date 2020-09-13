@@ -1,3 +1,7 @@
+$(window).on("load", function () {
+  $("#status").delay(700).fadeOut("slow");
+  $("#preloader").delay(800).fadeOut("slow");
+});
 $.ajax({
   type: "POST",
   url: "https://api.rootnet.in/covid19-in/contacts",
