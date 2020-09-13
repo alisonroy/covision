@@ -306,6 +306,10 @@
   color: #868c92;
   background-color: #181818;
 }
+#medtable {
+  color: #868c92;
+  background-color: #181818;
+}
 .hos-header {
   font-family: "Moon Bold";
 }
@@ -337,4 +341,13 @@
   background-repeat: no-repeat;
   margin: -100px 0 0 -100px;
   /* is width and height divided by two */
+}
+.card-med {
+  background-color: #181818;
+  color: #868c92;
+  margin-bottom: 10px;
+}
+.form-control {
+  background-color: #181818;
+  color: #fff;
 }
