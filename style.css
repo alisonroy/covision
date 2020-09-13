@@ -5,11 +5,10 @@
 }
 .home-social {
   list-style: none;
-  font-family: Montserrat, sans-serif;
   margin: 0;
   position: absolute;
-  top: 6rem;
-  right: 6.2rem;
+  top: 4rem;
+  right: 1rem;
   z-index: 500;
 }
 
@@ -50,10 +49,9 @@
 }
 
 .home-social span {
-  background-color: #151515;
+  background-color: #181818;
   font-size: 0.8rem;
   line-height: 30px;
-  color: #f26522;
   right: 50px;
   padding: 0 15px;
   margin: 3px 0;
@@ -74,7 +72,7 @@
   height: 0;
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
-  border-left: 6px solid #151515;
+  border-left: 6px solid #181818;
   position: absolute;
   top: 50%;
   right: -6px;
@@ -103,11 +101,6 @@
 
 .fa-facebook-f:before {
   content: "\f39e";
-}
-.light-mode {
-  background-color: #ffffff;
-  font-family: "Moon Light";
-  color: #00040c;
 }
 
 .groot {
@@ -221,7 +214,46 @@
   font-weight: bold;
   margin-bottom: 15px;
 }
-
+.card-custom {
+  background-color: #181818;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+  text-align: center;
+}
+.phone-card {
+  color: #868c92;
+}
+.phone-card:hover {
+  color: #ff0000;
+  text-decoration: none;
+}
+.card-custom:hover {
+  box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.12),
+    10px 10px 10px rgba(255, 0, 0, 0.12);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.light-mode {
+  background-color: #ffffff;
+  font-family: "Moon Light";
+  color: #00040c;
+}
+.card-update {
+  background-color: #181818;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 0.4;
+  font-family: "Moon Bold";
+  font-size: 7px;
+  color: #ffffff;
+}
 @media (min-width: 768px) {
   .text {
     font-size: 1.5rem;
@@ -235,27 +267,14 @@
   #footer-links-container ul {
     padding-left: 30px !important;
   }
-}
-
-.card {
-  background-color: #181818;
-  border-radius: 2px;
-  display: inline-block;
-  margin: 1rem;
-  position: relative;
-  width: 400px;
-  height: 150px;
-}
-.phone-card {
-  color: #868c92;
-}
-.phone-card:hover {
-  color: #ff0000;
-  text-decoration: none;
-}
-
-.card:hover {
-  box-shadow: 0 10px 10px rgba(255, 0, 0, 0.12),
-    0 10px 10px rgba(255, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  .home-social {
+    right: 3rem;
+  }
+  .card-custom {
+    width: 350px;
+    margin: 0.5rem;
+  }
+  .card-update {
+    font-size: 10px;
+  }
 }
