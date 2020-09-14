@@ -147,6 +147,9 @@
 }
 .groot-tagline {
   font-size: 2.5rem;
+  color: #868c92;
+  background-color: #00040c;
+  border-radius: 50px;
 }
 .navbar-custom {
   background-color: #00040c;
@@ -279,11 +282,9 @@
   .text {
     font-size: 1.5rem;
   }
-  .groot-tagline {
-    font-size: 3rem;
-  }
+
   .ch {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   #footer-links-container ul {
     padding-left: 30px !important;
@@ -297,6 +298,12 @@
   }
   .card-update {
     font-size: 10px;
+  }
+  .grah {
+    font-size: 4rem;
+  }
+  .groot-tagline {
+    font-size: 3.2rem;
   }
 }
 .foot-dark {
@@ -321,9 +328,7 @@
   bottom: 0;
   background-color: #00040c;
 
-  /* change if the mask should have another color then white */
   z-index: 99;
-  /* makes sure it stays on top */
 }
 
 #status {
@@ -331,16 +336,12 @@
   height: 200px;
   position: absolute;
   left: 50%;
-  /* centers the loading animation horizontally one the screen */
   top: 50%;
-  /* centers the loading animation vertically one the screen */
   background-image: url("eye.png");
-  /* path to your loading animation */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin: -100px 0 0 -100px;
-  /* is width and height divided by two */
 }
 .card-med {
   background-color: #181818;
@@ -350,4 +351,13 @@
 .form-control {
   background-color: #181818;
   color: #fff;
+}
+
+.card-about {
+  background-color: #181818;
+  padding: 10px;
+}
+
+.img-fluid {
+  border-radius: 50px;
 }
